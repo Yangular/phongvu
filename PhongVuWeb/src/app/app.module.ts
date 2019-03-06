@@ -3,25 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-<<<<<<< HEAD
+
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './home/header/header.component';
-=======
 import { AdminComponent } from './admin/admin.component';
-import { BannerComponent } from './banner/banner.component';
->>>>>>> 25f1eb8eb58e954c8a54b077aa5fccd051bde8b3
+import { MenuComponent } from './home/menu/menu.component';
+import { ContainerComponent } from './home/container/container.component';
+import { FooterComponent } from './home/footer/footer.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-<<<<<<< HEAD
+
     HomeComponent,
-    HeaderComponent
-=======
+    HeaderComponent,
     AdminComponent,
-    BannerComponent
->>>>>>> 25f1eb8eb58e954c8a54b077aa5fccd051bde8b3
+    MenuComponent,
+    ContainerComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule
