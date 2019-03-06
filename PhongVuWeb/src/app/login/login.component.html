@@ -3,21 +3,21 @@
 
     <div class="container">
         <div class="row">
-          <div class="col"> <p>ĐĂNG NHẬP</p> </div>
-          <div class="col"> <p>ĐĂNG KÍ</p> </div>
+          <div class="col"> <p (click)="onclick()">ĐĂNG NHẬP</p> </div>
+          <div class="col"> <p (click)="onclick()">ĐĂNG KÍ</p> </div>
         </div>
     </div>
     
-    <form class="login">
+    <form class="login" *ngIf="clicklogin">
       <input type="number" class="form-control" name="phone" placeholder="Số điện thoại">
       <input type="password" class="form-control" name="password" placeholder="Mật Khẩu">
-      <button type="button" class="btn btn-danger">button</button>
+      <button type="button" class="btn btn-danger">Đăng Nhập</button>
       <a href="">Quên mật Khẩu?</a>
       <p>Hoặc đăng nhập bằng</p>
       <button class="btn btn-primary">  Facebook </button>
     </form> 
 
-    <form class="Add-login">
+    <form class="Add-login" *ngIf="click">
         <input type="text" class="form-control" name="fullname" placeholder="Họ và Tên">
         <input type="text" class="form-control" name="email" placeholder="Địa chỉ Email">
         <input type="number" class="form-control" name="phone" placeholder="Số điện thoại">
