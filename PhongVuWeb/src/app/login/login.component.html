@@ -1,19 +1,23 @@
+
 <div class="formlogin">
   <div class="form-group">
 
-    <div class="container">
-        <div class="row">
-          <div class="col"> <p (click)="onclick()">ĐĂNG NHẬP</p> </div>
-          <div class="col"> <p (click)="onclick()">ĐĂNG KÍ</p> </div>
-        </div>
+    <div class="row">
+        <div class="col"> <p (click)="onclick()">ĐĂNG NHẬP</p> </div>
+        <div class="col"> <p (click)="onclick()">ĐĂNG KÝ</p> </div>
     </div>
+    <hr/>
     
-    <form class="login" *ngIf="clicklogin">
+    <form class="login" *ngIf="clicklogin"> 
+      <label>Nhập số điện thoại:</label>
       <input type="number" class="form-control" name="phone" placeholder="Số điện thoại">
+      <label>Nhập mật khẩu:</label>
       <input type="password" class="form-control" name="password" placeholder="Mật Khẩu">
-      <button type="button" class="btn btn-danger">Đăng Nhập</button>
-      <a href="">Quên mật Khẩu?</a>
+      <br><br>
+      <button type="button" class="btn btn-danger">Đăng nhập</button>
+      <div class="quenpass"> <a href="">Quên mật Khẩu?</a> </div>
       <p>Hoặc đăng nhập bằng</p>
+      
       <button class="btn btn-primary">  Facebook </button>
     </form> 
 
@@ -22,10 +26,11 @@
         <input type="text" class="form-control" name="email" placeholder="Địa chỉ Email">
         <input type="number" class="form-control" name="phone" placeholder="Số điện thoại">
         <input type="password" class="form-control" name="w-password" placeholder="Mật Khẩu">
-        <input type="password" class="form-control" name="r-password" placeholder="Nhập lại mật khẩu">
+        <input type="password" class="form-control" name="r-password" placeholder="Nhập lại mật khẩu"><br>
 
-        <button type="button" class="btn btn-danger">Đăng Kí</button>
+        <button type="button" class="btn btn-danger">Đăng ký</button>
       </form> 
     
   </div>
 </div>
+
