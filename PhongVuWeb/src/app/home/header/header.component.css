@@ -1,10 +1,13 @@
- *{
+
+ 
+/* *{
     background-repeat: no-repeat;
     margin: auto;
     width : auto;
-}
+    border: 1px solid black;
+} */
 
-.div-up{
+/* .div-up{
     width : auto;
     height: 80px;
     background-color: #c40316; 
@@ -97,15 +100,13 @@ img{
     border-radius: 4px; 
 }
 
-/* ------------------------------------------------- */
 
-/* .con-all-lane{
+
+ .con-all-lane{
     width :40px;
     border: solid 1px black;
 }
-.con-top-lane{
 
-}
 
 .footer{
     width :100%;
@@ -117,4 +118,4 @@ img{
     width :85%;
     height: 100%;
     margin: auto;
-} */
+}  */

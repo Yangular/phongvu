@@ -14,8 +14,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  onclick(){
+  
+  onclick () {
     this.click = !this.click;
     this.clicklogin = !this.clicklogin;
   }

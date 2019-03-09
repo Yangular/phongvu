@@ -10,6 +10,7 @@ import { AdminComponent } from './admin/admin.component';
 import { MenuComponent } from './home/menu/menu.component';
 import { ContainerComponent } from './home/container/container.component';
 import { FooterComponent } from './home/footer/footer.component';
+import { BannerComponent } from './banner/banner.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { FooterComponent } from './home/footer/footer.component';
     MenuComponent,
     ContainerComponent,
     FooterComponent,
+    BannerComponent,
   ],
   imports: [
     BrowserModule
