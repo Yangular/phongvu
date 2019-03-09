@@ -1,0 +1,40 @@
+
+<div class="form-admin-login">
+  <!--header-->
+  <div class="header">
+    <h1>Phong Vũ ADMIN</h1>
+  </div>
+  <!--//header-->
+  <!--main-->
+  <div class="main-layouts-agileinfo">
+    <!--form-stars-here-->
+    <div class="main-form">
+      <h2>Đăng Nhập Để Truy Cập</h2>
+      <form (submit)="onSubmit(namelogin.value, password.value)" #formSignIn="ngForm">
+        <div class="form-sub">
+          <input type="text" name="Username" placeholder="Tên Đăng Nhập" required="" [(ngModel)]="login['email']" #namelogin="ngModel"/>
+          <div class="icon">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="form-sub">
+          <input type="password" name="Password" placeholder="Mật Khẩu" required="" [(ngModel)]="login['password']" #password="ngModel" minlength="5"/>
+          <div class="icon">
+            <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+          </div>
+        </div>
+        <label class="anim">
+          <input type="checkbox" class="checkbox">
+          <span>Ghi nhớ mật khẩu</span>
+          <a href="#" style="float:right;">Forgot Password</a>
+        </label>
+        <div class="clear"></div>
+        <div class="submit-agileits">
+          <input type="submit" value="Đăng Nhập">
+        </div>
+      </form>
+    </div>
+    <!--//form-ends-here-->
+  </div>
+  <!--//main-->
+</div>
