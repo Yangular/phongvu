@@ -3,6 +3,7 @@
     height: auto;
     background:white;
     font-family: Arial, Helvetica, sans-serif;
+    border-top:3px solid red;
 }
 
 .con-full{
@@ -14,7 +15,7 @@
     float: left;
     margin-bottom: 15px;
 }
-<<<<<<< HEAD
+
 
 .con-full-fill{
     width : 85%;
@@ -246,7 +247,7 @@ span{
         float: left;
     }
         .img-left-one > img{
-            width : 30px;
+            width : 25px;
             height: auto;
         }
         .img-left-one > span{
@@ -255,7 +256,7 @@ span{
         .name-con-left > p{
             font-weight: bold; 
             font-size: 15px;
-            color: #6c757d;
+            color: #292a2b;
         }
     .con-cell-left-two{
         width: 25%;
@@ -264,7 +265,7 @@ span{
         float: left;
     }
         .img-left-two > img{
-            width : 30px;
+            width : 32px;
             height: auto;
         }
         .img-left-two > span{
@@ -293,10 +294,10 @@ span{
 }
     .h4i{
         font-size: 16px;
-        color: #6c757d;
+        color: #292a2b;
     }
     .imgright > img{
-        width : 800px;
+        width : 750px;
         height: 55px;
     }
 /* ------------------------------------------------ */
@@ -306,7 +307,7 @@ span{
  
  .con-end{
      width: 100%;
-     height: 320px;
+     height: 230px;
     background-color: #f8f8f8;
      margin: auto;
  }  
@@ -315,7 +316,7 @@ span{
         width : 85%;
         margin: auto;
         font-size: 11.5px;
-        color: rgba(0,0,0,.87);
+        color: #666;
         padding-top : 15px;
     }
 
@@ -323,7 +324,7 @@ span{
 /* ------------------------------------------------ */
  .con-off{
      width :100%;
-     height: 120px;
+     height: 80px;
  }
  .con-off-all{
      height: 100%;
@@ -338,20 +339,23 @@ span{
     }
         .off-one > h3{
             font-size: 14px;
+            color: #666;
         }
         .off-one > p{
             font-size: 12px;
+            color: #666;
         }
     .off-two{
         height: 100%;
         width : 56%;
         float: left;
-        font-size: 12px;
+        
         padding-top:50px;
     }
         .off-two > p{
+            font-size: 11px;
             float : right;
             line-height: 1;
+            color: #666;
         }
-=======
->>>>>>> 077518de12f0b2607cb55ee8f0f68047331ac8be
+
