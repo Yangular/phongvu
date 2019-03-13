@@ -6,6 +6,7 @@ import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { ProductsAddComponent } from './admin/container-admin/products-add/products-add.component';
 import { ProductsDetailsComponent } from './admin/container-admin/products-details/products-details.component';
 import { ProductsListComponent } from './admin/container-admin/products-list/products-list.component';
+import { HomeComponent } from './home/home.component';
 
 //CanActivate
 import { AuthGuard } from './Service/Guards/auth.guard';
@@ -13,8 +14,13 @@ import { AuthGuard } from './Service/Guards/auth.guard';
 export const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: '/login-admin',
+    redirectTo: '/home',
     pathMatch: 'full'
+  },
+
+  {
+    path: 'home',
+    component: HomeComponent
   },
 
   {

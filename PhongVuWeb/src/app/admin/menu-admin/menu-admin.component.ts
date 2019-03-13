@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu-admin',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuAdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public routerService : Router,
+  ) { }
 
   ngOnInit() {
   }
 
+  logout() {
+    if(localStorage.getItem('userToken')){
+      localStorage.removeItem('userToken');
+      this.routerService.navigate(['login-admin']);
+    }
+  }
 }
