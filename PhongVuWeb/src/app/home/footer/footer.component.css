@@ -306,8 +306,8 @@ span{
  
  .con-end{
      width: 100%;
-     height: 230px;
-    background-color: #f8f8f8;
+     height: 300px;
+     background-color: #f8f8f8;
      margin: auto;
  }  
     .con-end-one{
@@ -323,7 +323,7 @@ span{
 /* ------------------------------------------------ */
  .con-off{
      width :100%;
-     height: 80px;
+     height: 200px;
  }
  .con-off-all{
      height: 100%;
@@ -334,7 +334,7 @@ span{
         height: 100%;
         width : 44%;
         float: left;
-        padding-top:24px;
+        padding-top:60px;
     }
         .off-one > h3{
             font-size: 14px;
@@ -349,7 +349,7 @@ span{
         width : 56%;
         float: left;
         
-        padding-top:50px;
+        padding-top:100px;
     }
         .off-two > p{
             font-size: 11px;
