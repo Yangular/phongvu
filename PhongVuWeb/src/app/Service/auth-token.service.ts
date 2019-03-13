@@ -46,7 +46,7 @@ export class AuthTokenService {
     if (error.status >= 500) {
       Swal.fire({
         type: 'error',
-        title: 'Oops...',
+        title: 'Error!!!',
         text: '500 Internal Server Error, please try agian later!',
         footer: '<a href>Why do I have this issue?</a>'
       });
@@ -55,7 +55,7 @@ export class AuthTokenService {
     } else {
       Swal.fire({
         type: 'error',
-        title: 'Oops...',
+        title: 'Error!!!',
         text: 'Email or password is wrong!',
       });
     }

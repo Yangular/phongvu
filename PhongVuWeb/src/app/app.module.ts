@@ -12,20 +12,18 @@ import { HeaderComponent } from './home/header/header.component';
 import { AdminComponent } from './admin/admin.component';
 import { MenuComponent } from './home/menu/menu.component';
 import { ContainerComponent } from './home/container/container.component';
-import { FooterComponent } from './home/footer/footer.component';
-<<<<<<< HEAD
-import { BannerComponent } from './banner/banner.component';
-=======
 import { HeaderAdminComponent } from './admin/header-admin/header-admin.component';
 import { MenuAdminComponent } from './admin/menu-admin/menu-admin.component';
 import { ContainerAdminComponent } from './admin/container-admin/container-admin.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
+import { ProductsListComponent } from './admin/container-admin/products-list/products-list.component';
+import { ProductsDetailsComponent } from './admin/container-admin/products-details/products-details.component';
 
-//router
+//router-service
 import { appRoutes } from './app.router';
-import { AuthGuard } from './Service/Guards/auth.guard'
->>>>>>> 077518de12f0b2607cb55ee8f0f68047331ac8be
-
+import { AuthGuard } from './Service/Guards/auth.guard';
+import { ProductsService } from './Service/products.service';
+import { ProductsAddComponent } from './admin/container-admin/products-add/products-add.component';
 
 @NgModule({
   declarations: [
@@ -37,15 +35,13 @@ import { AuthGuard } from './Service/Guards/auth.guard'
     AdminComponent,
     MenuComponent,
     ContainerComponent,
-    FooterComponent,
-<<<<<<< HEAD
-    BannerComponent,
-=======
     HeaderAdminComponent,
     MenuAdminComponent,
     ContainerAdminComponent,
     LoginAdminComponent,
->>>>>>> 077518de12f0b2607cb55ee8f0f68047331ac8be
+    ProductsListComponent,
+    ProductsDetailsComponent,
+    ProductsAddComponent,
   ],
   imports: [
     FormsModule,
@@ -54,7 +50,8 @@ import { AuthGuard } from './Service/Guards/auth.guard'
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
-    AuthGuard
+    AuthGuard,
+    ProductsService
   ],
   bootstrap: [AppComponent]
 })

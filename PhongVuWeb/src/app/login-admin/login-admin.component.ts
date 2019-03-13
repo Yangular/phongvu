@@ -21,7 +21,7 @@ export class LoginAdminComponent implements OnInit {
     private authService: AuthTokenService
   ) { }
 
-  onSubmit(formSignIn) {
+  onSubmit() {
     this.authService.login(this.login).subscribe(data => {
       console.log(data);
       localStorage.setItem('userToken', data.token);
