@@ -1,0 +1,42 @@
+
+<div class="panel panel-default" style="background: rgba(255, 255, 255, 0.07);">
+      <div class="panel-heading" style="background: rgba(212, 73, 73, 0.5); color:aquamarine;">
+        <h2>QUẢN LÝ DANH SÁCH CÁC SẢN PHẨM</h2>
+      </div>
+      <div class="panel-body">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>IMAGES</th>
+                    <th>PRICE</th>
+                    <th>QUANTITY</th>
+                    <th>IS_ACTIVE</th>
+                    <th>CATEGORY</th>
+                    <th>STASTUS</th>
+                    <th>DISCOUNT</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of _products.docs">
+                    <td> {{ item.id }} </td>
+                    <td> {{ item.title }} </td>
+                    <td> <img [src]=" item.images">  </td>
+                    <td> {{ item.price }} </td>
+                    <td> {{ item.quantity }} </td>
+                    <td> {{ item.is_active }} </td>
+                    <td> {{ item.category }} </td>
+                    <td> {{ item.status }} </td>
+                    <td> {{ item.discount }} </td>
+                    <td> <button type="button" class="btn btn-success">Edit</button> | <button type="button" class="btn btn-primary">Disable    </button></td>
+                </tr> 
+            </tbody>
+        </table>
+        
+        <div class="button">
+            <button type="button" class="btn btn-danger" [routerLink]="['add']">--- Thêm Sản Phẩm ---</button>
+        </div>
+      </div>
+</div>

@@ -1,15 +1,16 @@
 .container-pan{
     width : 100%;
-    height: 120px;
+    height: 125px;
     /* border: 1px solid red; */
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     margin-top: -24px;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .pan-all-all{
     width: 100%;
-    height: 80px;
+    height: 85px;
     background-color:rgb(43, 50, 120);
 }
 
@@ -20,16 +21,16 @@
     float: left;
 }   
     .pan-logo > label > img{
-        width: 77px;
-        height: 75px;
-        margin-top: 1px;
+        width: 75px;
+        height: 73px;
+        margin-top: 12px;
         margin-left: 153px;
     }
 
-.pan-input{
+.pan-inputt{
     width: 35%;
     height: 80px;
- 
+    
     float: left;
 }
     .pan-input-one > input{
@@ -40,7 +41,7 @@
         height: 40px;
         padding: 5px 40px 5px 15px;
         width: 95%;
-        margin-top:18px;
+        margin-top:29px;
         float: left;
 
     }
@@ -65,6 +66,7 @@
     line-height: 1.1;
     font-family: Roboto,sans-serif;
     cursor: pointer;
+    margin-top:15px;
 }
     .pan-right-one{
         width: 24%;
@@ -81,7 +83,7 @@
             .pan-right-one-img > a > img{
                 width: 37px;
                 height: auto;
-                margin-top: 20px;   
+                margin-top: 16px;   
                 margin-left: 15px; 
             }
         .pan-right-one-span{
@@ -113,7 +115,7 @@
             .pan-right-two-img > a > img{
                 width: 35px;
                 height: auto;
-                margin-top: 20px;   
+                margin-top: 15px;   
                 margin-left: 15px; 
             }
             .pan-right-two-span{
@@ -145,7 +147,7 @@
         .pan-right-there-img > a > img{
             width: 50px;
             height: 60px;
-            margin-top: 8px;   
+            margin-top: 2px;   
             margin-left: 5px; 
         }
         .pan-right-there-span{
@@ -170,65 +172,55 @@
         .pan-right-four-img > a > img{
             width: 40px;
             height: 50px;
-            margin-top: 15px;   
+            margin-top: 5px;   
             margin-left: 23px; 
         }
 
-    
-    
-
-
-
-
-
+/* ------------------------------------------------ */
 
 .pan-bot-all{
     width: 100%;
     height: 40px;
     background-color: #b3d4fc;
     cursor: pointer;
-    /* background-color:whitesmoke; */
+    
 }
     .pan-bot-v{
         width: 30%;
         height: 40px;
-        /* border: 1px solid black; */
         float: left;
     }       
 
     .pan-bot{
         width : 70%;
         height: 40px;
-        /* border: 1px solid black; */
         float: left;
     }
 
         .pan-bot-a{
             width : 15%;
-            height: 40px;
-            /* border: 1px solid black; */
+            height: 40px;  
             float: left;
         }   
             .pan-bot-a-img{
                 width: 15%;
-                height: 40px;
-                /* border: 1px solid gold; */
+                height: 40px; 
                 float: left;
             }
                 .pan-bot-a-img > a > img{
                     width :13px;
                     height: 13px;
                     margin-left: 2px;
-                    margin-top:10px;
+                    margin-top:0px;
                 }
             .pan-bot-a-span{
                 width: 85%;
                 height: 35px;
-                /* border: 1px solid red; */
                 float: left;
-                margin-top: 5px;
+                margin-top: 0px;
             }
                 .pan-bot-a-span > span{
+                    
                     font-size: 12px;    
                 }
                 
@@ -236,38 +228,55 @@
         .pan-bot-b{
             width : 13%;
             height: 40px;
-            /* border: 1px solid black; */
             float: left;
         }
             .pan-bot-b-img > a > img{
                 width :18px;
                 height: 20px;
                 margin-left: 2px;
-                margin-top:10px;
+                margin-top:0px;
                 float: left;
             }
         .pan-bot-c{
             width : 15%;
             height: 40px;
-            /* border: 1px solid black; */
+            
             float: left;
         }
         .pan-bot-d{
             width : 15%;
             height: 40px;
-            /* border: 1px solid black; */
+            
             float: left;
         }
         .pan-bot-e{
             width : 15%;
             height: 40px;
-            /* border: 1px solid black; */
+            
             float: left;
         }
 
         span:hover{
             color:red;
+        } 
+
+
+        /* .headerBottom{
+            background:#F1F0F1;
+            box-shadow: 0 2px 1px -1px rgba(0,0,0,.25);
+            padding:0.7% 0;
+            margin-bottom: 0em;
         }
-
-
-
+        .headerBottom .col-md-8{
+            font-size:12px;
+            font-family: Roboto,sans-serif;
+            line-height: 1.5;
+            display: flex;
+        }
+        .headerBottom .col-md-8 .col-md{
+            margin-left:1.2em;
+            font-weight:600;
+            letter-spacing:0.3px;
+            cursor: pointer;
+        } */
+        /* end header */

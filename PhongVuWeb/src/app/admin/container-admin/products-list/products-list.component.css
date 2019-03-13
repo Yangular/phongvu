@@ -1,0 +1,20 @@
+table {
+    border: 2px solid blue;
+}
+.table > thead > tr {
+    background-color: aquamarine;
+}   
+th {
+    border: 2px solid blue;
+    text-align: center;     
+}
+td {
+    border: 2px solid blue;
+    text-align: center; 
+    color: greenyellow;  
+    font-size: 12px;  
+}
+    td > img {
+        width: 150px;
+        height: 150px;
+    }
