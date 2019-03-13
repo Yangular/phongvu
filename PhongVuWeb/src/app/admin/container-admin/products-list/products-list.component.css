@@ -1,5 +1,6 @@
 table {
     border: 2px solid blue;
+    background-color: white;
 }
 .table > thead > tr {
     background-color: aquamarine;
@@ -16,5 +17,5 @@ td {
 }
     td > img {
         width: 150px;
-        height: 150px;
+        height: 100px;
     }
