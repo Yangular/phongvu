@@ -1,11 +1,7 @@
 .container-pan{
     width : 100%;
-    height: 125px;
-    /* border: 1px solid red; */
     margin-bottom: 7px;
-    margin-top: -10px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 .pan-all-all{
@@ -13,270 +9,128 @@
     height: 85px;
     background-color:rgb(43, 50, 120);
 }
+.pan-all {
+    width: 1200px;
+    margin: 0 auto;
+}
 
 .pan-all-logo{
-    width : 20%;
-    height: 80px;
-    /* border: 1px solid white; */
     float: left;
 }   
     .pan-logo > label > img{
         width: 75px;
         height: 73px;
-        margin-top: 12px;
-        margin-left: 153px;
+        margin-top: 5px;
     }
 
 .pan-inputt{
+    border-radius: 5px;
     width: 35%;
-    height: 80px;
-    
-    float: left;
+    background: #fff;
+    float: right;
+    margin-top:25px;
 }
     .pan-input-one > input{
-        background: #fff;
         border: 0;
-        border-radius: 2px;
         font-size: 12px;
         height: 40px;
         padding: 5px 40px 5px 15px;
-        width: 95%;
-        margin-top:29px;
+        width: 90%;
         float: left;
-
     }
-    /* .pan-input-impac{
-        height: 39px;
-        width : 10%;
-        float: left;
-        margin-top: 19px;
-        background-color: white;
-    }
-        .pan-input-impac > a > img{
-            padding: 5px;
-            width: 50px;
-            height: 50px;
-        } */
-
+    .search-btn{
+        padding:5px 0px 0px 10px;
+        font-size: 25px;
+        background: #fff;
+        width: 10%;
+        float: right;
+	}
 .pan-right-all{
-    width: 45%;
-    height: 80px;
-    /* border: 1px solid gold; */
-    float: left;
-    line-height: 1.1;
+    width: 50%;
+    float: right;
     font-family: Roboto,sans-serif;
     cursor: pointer;
-    margin-top:15px;
+    margin-top:5px;
 }
-    .pan-right-one{
-        width: 24%;
-        height: 80px;
-        /* border: 1px solid black; */
-        float: left;
+    .pan-right{
+        padding-left:5px; 
+        width: 25%;
+        float: right;
     }
-        .pan-right-one-img{
+        .pan-right-img{
             width : 40%;
-            height: 80px;
-            /* border: 1px solid red; */
             float: left;
         }
-            .pan-right-one-img > a > img{
+            .pan-right-img > a > img{
                 width: 37px;
-                height: auto;
-                margin-top: 16px;   
+                margin-top: 20px;   
                 margin-left: 15px; 
             }
-        .pan-right-one-span{
+        .pan-right-span{
+            padding-left: 5px; 
             width: 60%;
-            height: 50px;
-            /* border: 1px solid red; */
-            float: left;
+            float: right;
             margin-top: 19px;
             text-align: left;
         }   
-            .pan-right-one-span > span{
-                top: 100px;
+            .pan-right-span > span{
                 color: #fff;
                 font-size: 13px;
             }
-
-    .pan-right-two{
-        width: 24%;
-        height: 80px;
-        /* border: 1px solid wheat; */
-        float: left;
+    .pan-right-bad{
+        padding-left: 10px; 
+        width: 15%;
+        float: right;
     }
-        .pan-right-two-img{
-            width : 40%;
-            height: 80px;
-            /* border: 1px solid red; */
-            float: left;
-        }
-            .pan-right-two-img > a > img{
-                width: 35px;
-                height: auto;
-                margin-top: 15px;   
-                margin-left: 15px; 
-            }
-            .pan-right-two-span{
-                width: 60%;
-                height: 50px;
-                /* border: 1px solid red; */
-                float: left;
-                margin-top: 19px;
-                text-align: left;
-            }   
-                .pan-right-two-span > span{
-                    top: 100px;
-                    color: #fff;
-                    font-size: 13px;
-                }
-
-    .pan-right-there{
-        width: 24%;
-        height: 80px;
-        /* border: 1px solid black; */
-        float: left;
-    }
-    .pan-right-there-img{
-        width : 40%;
-        height: 80px;
-        /* border: 1px solid red; */
-        float: left;
-    }
-        .pan-right-there-img > a > img{
-            width: 50px;
-            height: 60px;
-            margin-top: 2px;   
-            margin-left: 5px; 
-        }
-        .pan-right-there-span{
-            width: 60%;
-            height: 50px;
-            /* border: 1px solid red; */
-            float: left;
-            margin-top: 19px;
-            text-align: left;
-        }   
-            .pan-right-there-span > span{
-                color: #fff;
-                font-size: 13px;
-            }
-
-    .pan-right-four{
-        width: 28%;
-        height: 80px;
-        /* border: 1px solid wheat; */
-        float: left;
-    }
-        .pan-right-four-img > a > img{
-            width: 40px;
-            height: 50px;
-            margin-top: 5px;   
-            margin-left: 23px; 
-        }
 
 /* ------------------------------------------------ */
 
 .pan-bot-all{
     width: 100%;
-    height: 40px;
+    height: 30px;
     background-color: #b3d4fc;
     cursor: pointer;
     
 }
-    .pan-bot-v{
-        width: 30%;
-        height: 40px;
+.pan-bot {
+    width: 1200px;
+    margin: 0 auto;
+}
+    .pan-bot-l{
+        width: 25%;
+        height: 30px;
         float: left;
     }       
 
-    .pan-bot{
-        width : 70%;
-        height: 40px;
+    .pan-bot-r{
+        padding-top: 5px;
+        width : 75%;
         float: left;
     }
 
         .pan-bot-a{
-            width : 15%;
-            height: 40px;  
-            float: left;
+            float: right;
+            padding-right: 15px;
+           
         }   
-            .pan-bot-a-img{
-                width: 15%;
-                height: 40px; 
+            .pan-bot-img{
+                margin-right: 5px;
                 float: left;
             }
-                .pan-bot-a-img > a > img{
-                    width :13px;
-                    height: 13px;
+                .pan-bot-img > a > img{
+                    width :15px;
+                    height: 15px;
                     margin-left: 2px;
                     margin-top:0px;
                 }
-            .pan-bot-a-span{
-                width: 85%;
-                height: 35px;
+            .pan-bot-span{
                 float: left;
                 margin-top: 0px;
             }
-                .pan-bot-a-span > span{
-                    
+                .pan-bot-span > span{
                     font-size: 12px;    
                 }
-                
-
-        .pan-bot-b{
-            width : 13%;
-            height: 40px;
-            float: left;
-        }
-            .pan-bot-b-img > a > img{
-                width :18px;
-                height: 20px;
-                margin-left: 2px;
-                margin-top:0px;
-                float: left;
-            }
-        .pan-bot-c{
-            width : 15%;
-            height: 40px;
-            
-            float: left;
-        }
-        .pan-bot-d{
-            width : 15%;
-            height: 40px;
-            
-            float: left;
-        }
-        .pan-bot-e{
-            width : 15%;
-            height: 40px;
-            
-            float: left;
-        }
-
+       
         span:hover{
             color:red;
         } 
-
-
-        /* .headerBottom{
-            background:#F1F0F1;
-            box-shadow: 0 2px 1px -1px rgba(0,0,0,.25);
-            padding:0.7% 0;
-            margin-bottom: 0em;
-        }
-        .headerBottom .col-md-8{
-            font-size:12px;
-            font-family: Roboto,sans-serif;
-            line-height: 1.5;
-            display: flex;
-        }
-        .headerBottom .col-md-8 .col-md{
-            margin-left:1.2em;
-            font-weight:600;
-            letter-spacing:0.3px;
-            cursor: pointer;
-        } */
-        /* end header */

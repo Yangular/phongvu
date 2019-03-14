@@ -1,34 +1,27 @@
-/* bannerNav */
 #bannerNav{
 	margin-top:0.3em;
-	border: 1px solid red;
 }
 #bannerNav .container{
-	min-width:90%;
+	width: 1200px;
+	margin: 0 auto;
 }
 .bannerNav-left{
-	background:rgb(248, 248, 248);
+	background:white;
 	padding-top:1px;
 	padding-bottom:1px;
-	border: 1px solid rebeccapurple;
 }
 .navPrimaryOne{
 	list-style-type: none;
 }
 .navPrimaryOne li{
-	line-height:2.0em;
-	cursor: pointer;
-	font-size: 13px;
+	margin-left: -70px;
+	line-height: 2.4em;
 }
-	li:hover{
-		color: red;
-	}
-
+.navPrimaryOne li:hover {
+	color: #D42333;
+}
 .bannerNav-center{
-	width: 650px;
-	padding:5px;
-	border: #D42333 1px solid;
-	
+	padding:0 5px;
 }
 .bannerSlider-button{
 	display:flex;
@@ -36,7 +29,7 @@
 }
 .bannerSlider-button a{
 	flex:1;
-	font-size:14px;
+	font-size:12px;
 	font-weight:600;
 	cursor: pointer;
 	text-align:center;
@@ -58,13 +51,10 @@
 	border-bottom: 2px solid #D42333;
 }
 .bannerNav-right{
-	padding:0px;
+	padding:0;
 	display:flex;
 	flex-direction: column;
-	margin-left: 2px;
-
 }
 .bannerNav-right div{
 	flex:1;
 }
-/* end bannerNav */
