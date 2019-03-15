@@ -1,0 +1,53 @@
+<div class="formAdd">
+  <h2 id="nameForm">Chỉnh Sửa Thông Tin Sản Phẩm</h2>
+<form (ngSubmit)="onUpdate(formUp)" #formUp="ngForm">
+
+    <div class="row">
+        <label for="TITLE">TITLE:</label>
+        <input type="text" class="txt" placeholder="TITLE" required name="title" #title="ngModel" [(ngModel)]="_products.title">
+    </div>
+
+    <div class="row">
+        <label for="IMAGE">IMAGE:</label>
+        <input class="txt" type="file" id="exampleInputFile" name="tpic" #pic="ngModel" [(ngModel)]="_products.pic">
+    </div>
+
+    <div class="row">
+        <label for="PRICE">PRICE:</label>
+        <input type="number" class="txt" placeholder="PRICE" required name="tprice" #price="ngModel" [(ngModel)]="_products.price">
+    </div>
+
+    <div class="row">
+        <label for="QUANTITY">QUANTITY:</label>
+        <input type="number" class="txt" placeholder="QUANTITY" required name="tquantity" #quantity="ngModel" [(ngModel)]="_products.quantity">
+    </div>
+
+    <div class="row">
+        <label for="IS_ACTIVE">IS_ACTIVE:</label>
+        <select class="txt" name="" id="" name="tis-active" #is_active="ngModel" [(ngModel)]="_products.is_active">
+          <option value="true"> True </option>
+        </select>
+    </div>
+
+    <div class="row">
+        <label for="CATEGORY">CATEGORY:</label>
+        <input type="text" class="txt" placeholder="CATEGORY" required name="tcategory" #category="ngModel" [(ngModel)]="_products.category">
+    </div>
+
+    <div class="row">
+        <label for="STASTUS">STASTUS:</label>
+        <input type="text" class="txt" placeholder="STASTUS" required name="tstatus" #status="ngModel" [(ngModel)]="_products.status">
+    </div>
+
+    <div class="row">
+        <label for="DISCOUNT">DISCOUNT:</label>
+        <input type="number" class="txt" placeholder="DISCOUNT" required name="tdiscount" #discount="ngModel" [(ngModel)]="_products.discount">
+    </div>
+  
+    <div class="submit"> 
+      <div class="submit-agileits">
+          <input type="submit" value="Chỉnh Sửa">
+      </div>
+    </div>
+</form>
+</div>

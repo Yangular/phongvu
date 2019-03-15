@@ -4,7 +4,7 @@ import { Routes } from '@angular/router';
 import { AdminComponent } from './admin/admin.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { ProductsAddComponent } from './admin/container-admin/products-add/products-add.component';
-import { ProductsDetailsComponent } from './admin/container-admin/products-details/products-details.component';
+import { ProductsEditComponent } from './admin/container-admin/products-edit/products-edit.component';
 import { ProductsListComponent } from './admin/container-admin/products-list/products-list.component';
 import { HomeComponent } from './home/home.component';
 
@@ -42,8 +42,8 @@ export const appRoutes: Routes = [
         component: ProductsAddComponent
       },
       {
-        path: 'edit',
-        component: ProductsDetailsComponent
+        path: 'edit/:id',
+        component: ProductsEditComponent
       }
     ]
   },

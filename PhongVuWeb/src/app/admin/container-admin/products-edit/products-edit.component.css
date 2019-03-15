@@ -1,3 +1,13 @@
+@font-face{
+	font-family: 'FontUVF.font';
+    src: url(../../../../assets/fonts/UVF.ttf);
+}
+h2#nameForm {
+    color:rgb(12, 240, 114);
+    text-align: center;
+    font-family: 'FontUVF.font';
+    font-size: 50px;
+}
 .formAdd {
     padding: 5px;
     margin: 0 auto;
@@ -31,7 +41,8 @@ form .row {
     font-weight: bold;
     width: 150px;
     padding: 6px 0;
-    color:#32c2e6;
+    color:#26148d;
+    text-shadow: 2px 2px 8px #FF0000;
     vertical-align: top;
   }
 
