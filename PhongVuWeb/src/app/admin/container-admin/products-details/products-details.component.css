@@ -1,0 +1,136 @@
+.formAdd {
+    padding: 5px;
+    margin: 0 auto;
+    width: 650px;
+    height: auto;
+}
+.formAdd > div > p {
+    padding: 5px;
+
+}
+
+.nameForm{
+    color: brown;
+    text-shadow: 2px;
+    text-align: center;
+}
+
+/* form styles */
+form .row {
+    display: block;
+    padding: 7px 8px;
+    margin-bottom: 7px;
+  }
+  form .row:hover {
+    background: #f1f7fa;
+  }
+   
+  form label {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 150px;
+    padding: 6px 0;
+    color:#32c2e6;
+    vertical-align: top;
+  }
+
+   
+  form .note {
+    font-size: 1.2em;
+    line-height: 1.33em;
+    font-weight: normal;
+    padding: 2px 7px;
+    margin-bottom: 10px;
+  }
+   
+  form input:focus { outline: none; }
+   
+  ::-webkit-input-placeholder { color: #aaafbd; font-style: italic; } /* WebKit */
+  :-moz-placeholder { color: #aaafbd; font-style: italic; }           /* Mozilla Firefox 4 to 18 */
+  ::-moz-placeholder { color: #aaafbd; font-style: italic; }          /* Mozilla Firefox 19+ */
+  :-ms-input-placeholder { color: #aaafbd; font-style: italic; }      /* Internet Explorer 10+ */
+
+  /* input text */
+  form .txt {
+    display: inline-block;
+    padding: 5px 5px;
+    padding-right: 30px;
+    width: 400px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+    color: #898989;
+    background-color: #f0f0f0;
+    background-position: 110% center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.75);
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 2px rgba(25, 25, 25, 0.25) inset, -1px 1px #fff;
+    -moz-box-shadow: 0 1px 2px rgba(25, 25, 25, 0.25) inset, -1px 1px #fff;
+    box-shadow: 0 1px 2px rgba(25, 25, 25, 0.25) inset, -1px 1px #fff;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+
+  form .txt:focus {
+    width: 450px;
+    color: #545454;
+    background-color: #fff;
+    background-position: 110% center;
+    background-repeat: no-repeat;
+    border-color: #059;
+    -webkit-box-shadow: 0 1px 4px -1px #a8a8a8 inset, 0 1px rgba(255, 255, 255, 0.6), 0 0 11px rgba(70, 100, 200, 0.7);
+    -moz-box-shadow: 0 1px 4px -1px #a8a8a8 inset, 0 1px rgba(255, 255, 255, 0.6), 0 0 11px rgba(70, 100, 200, 0.7);
+    box-shadow: 0 1px 4px -1px #a8a8a8 inset, 0 1px rgba(255, 255, 255, 0.6), 0 0 11px rgba(70, 100, 200, 0.7);
+  }
+   
+  form .txt:valid {
+    background-color: #deecda;
+    background-position: 98% center;
+    background-repeat: no-repeat;
+    color: #7d996e;
+    border: 1px solid #95bc7d;
+  }
+  form .txt:focus:valid {
+    -webkit-box-shadow: 0 1px 4px -1px #a8a8a8 inset, 0 1px rgba(255, 255, 255, 0.6), 0 0 11px rgba(120, 200, 70, 0.7);
+    -moz-box-shadow: 0 1px 4px -1px #a8a8a8 inset, 0 1px rgba(255, 255, 255, 0.6), 0 0 11px rgba(120, 200, 70, 0.7);
+    box-shadow: 0 1px 4px -1px #a8a8a8 inset, 0 1px rgba(255, 255, 255, 0.6), 0 0 11px rgba(120, 200, 70, 0.7);
+  }
+  .submit{
+    width: 210px;
+    margin: 0 auto;
+  }
+  .submit-agileits input[type="submit"] {
+    text-align: center;
+    border: 0;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 50px;
+    background-color: rgba(224, 43, 11, 0.34);
+    border: 3px solid rgba(224, 43, 11, 0.43);
+    -webkit-box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.71);
+    -moz-box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.71);
+    box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.71);
+    outline: none;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+}
+.submit-agileits input[type="submit"]:hover {
+    color: #ffffff;
+    border-color: red;
+}

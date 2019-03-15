@@ -1,52 +1,47 @@
 <div class="formAdd">
     <h2 style="color:red; text-align: center;">THÊM THÔNG TIN SẢN PHẨM</h2>
-  <form>
-      <div class="row">
-          <label for="ID">ID:</label>
-          <input type="text" class="txt" placeholder="ID" required>
-      </div>
+  <form (ngSubmit)="onSubmit(formAdd)" #formAdd="ngForm">
   
       <div class="row">
           <label for="TITLE">TITLE:</label>
-          <input type="text" class="txt" placeholder="TITLE" required>
+          <input type="text" class="txt" placeholder="TITLE" required name="title" #title="ngModel" [(ngModel)]="_products.title">
       </div>
   
       <div class="row">
           <label for="IMAGE">IMAGE:</label>
-          <input class="txt" type="file" id="exampleInputFile">
+          <input class="txt" type="file" id="exampleInputFile" name="pic" #pic="ngModel" [(ngModel)]="_products.pic">
       </div>
   
       <div class="row">
           <label for="PRICE">PRICE:</label>
-          <input type="text" class="txt" placeholder="PRICE" required>
+          <input type="number" class="txt" placeholder="PRICE" required name="price" #price="ngModel" [(ngModel)]="_products.price">
       </div>
   
       <div class="row">
           <label for="QUANTITY">QUANTITY:</label>
-          <input type="text" class="txt" placeholder="QUANTITY" required>
+          <input type="number" class="txt" placeholder="QUANTITY" required name="quantity" #quantity="ngModel" [(ngModel)]="_products.quantity">
       </div>
   
       <div class="row">
           <label for="IS_ACTIVE">IS_ACTIVE:</label>
-          <select class="txt" name="" id="">
-              <option value="true"> True </option>
-              <option value="false"> False </option>
+          <select class="txt" name="" id="" name="is-active" #is_active="ngModel" [(ngModel)]="_products.is_active">
+            <option value="true"> True </option>
           </select>
       </div>
   
       <div class="row">
           <label for="CATEGORY">CATEGORY:</label>
-          <input type="text" class="txt" placeholder="CATEGORY" required>
+          <input type="text" class="txt" placeholder="CATEGORY" required name="category" #category="ngModel" [(ngModel)]="_products.category">
       </div>
   
       <div class="row">
           <label for="STASTUS">STASTUS:</label>
-          <input type="text" class="txt" placeholder="STASTUS" required>
+          <input type="text" class="txt" placeholder="STASTUS" required name="status" #status="ngModel" [(ngModel)]="_products.status">
       </div>
   
       <div class="row">
           <label for="DISCOUNT">DISCOUNT:</label>
-          <input type="text" class="txt" placeholder="DISCOUNT" required>
+          <input type="number" class="txt" placeholder="DISCOUNT" required name="discount" #discount="ngModel" [(ngModel)]="_products.discount">
       </div>
     
       <div class="submit"> 
@@ -54,7 +49,5 @@
             <input type="submit" value="Thêm Sản Phẩm">
         </div>
       </div>
-    
-      
   </form>
 </div>

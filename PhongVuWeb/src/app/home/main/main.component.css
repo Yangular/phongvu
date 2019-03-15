@@ -2,16 +2,15 @@
     margin-top:1em;
 }
 #main .container{
-    min-width:85%;
+    width: 1200px;
 }
 /* row One */
 .rowOne{
-    padding:1% 0;
     background:#d3d4d4;
-    
+    max-width:100%;
 }
 .rowOne marquee{
-    max-width:95%;
+    max-width:100%;
 }
 .rowOne a{
     margin-right:15em;
@@ -29,6 +28,10 @@
 }
 .rowTwo-left{
     flex:1;
+}
+.rowTwo-left > img {
+    width: 200px;
+    height: 436px;
 }
 .rowTwo-right{
     flex:4;
