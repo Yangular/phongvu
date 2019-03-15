@@ -1,0 +1,361 @@
+#product-detail-all{
+    width : 100%;
+    height: 1000px;
+    background-color: rgb(245, 245, 245);
+}
+
+.detail-full-in{
+    width : 80%;
+    height: 1000px;
+    margin: auto;
+    background: #fff;
+    margin-top: -5px;
+    padding: 6px;
+}
+
+.detail-left{
+    width : 40%;
+    height: auto;
+    float: left;
+}
+    .detail-left-topimg{
+        width : 100%;
+        height: 395px;
+        margin-top: 0px;
+    }
+         .detail-left-topimg img{
+            margin-left: 0px;
+            height: 100%;
+            width :100%;
+        }
+
+    .detail-left-botimg{
+        width : 100%;
+        height: 70px;
+        margin-top: 0px;
+    }
+    .bot-img-one{
+        width : 20%;
+        height: 100%;
+        float: left;
+    }
+        .bot-img-one:hover{
+            border: 2px solid red;
+        }
+        .bot-img-one > img {
+            width : 66px;
+            height: 66px;
+            margin-left: 7px;
+        }
+    .bot-img-two{
+        width : 15%;
+        height: 100%;
+        float: left;
+    }
+        .bot-img-two:hover{
+            border: 2px solid red;
+        }
+        .bot-img-two > img {
+            width : 60px;
+            height: 55px;
+            margin-top: 5px;
+        }
+    .bot-img-three{
+        width : 20%;
+        height: 100%;
+        float: left;
+    }
+        .bot-img-three:hover{
+            border: 2px solid red;
+        }
+        .bot-img-three > img {
+            width : 66px;
+            height: 55px;
+            margin-top: 5px;
+            margin-left: 9px;
+        }
+    .bot-img-four{
+        width : 20%;
+        height: 100%;
+        float: left;
+    }
+        .bot-img-four:hover{
+            border: 2px solid red;
+        }
+        .bot-img-four > img {
+            width : 75px;
+            height: 66px;
+            margin-top: 0px;
+            margin-left: 4px;
+        }
+    .bot-img-five{
+        width : 20%;
+        height: 100%;
+        float: left;
+    }
+        .bot-img-five:hover{
+            border: 2px solid red;
+        }
+        .bot-img-five > img {
+            width : 55px;
+            height: 55px;
+            margin-top: 5px;
+            margin-left: 15px;
+        }
+.detail-left-text{
+    margin-top:10px;
+}
+    .format{
+        line-height: 1em;
+        font-size: 12px;
+    }
+    .button-them{
+        width : auto;
+        height: 30px;
+        padding: 2px;
+        margin-left: 10px;
+    }
+
+
+
+
+.detail-right{  
+    width : 60%;
+    height: 1000px;
+    float: left;
+}
+    .title h4{
+        font-size: 18px;
+        line-height: 1.4em;
+        box-sizing: border-box;
+        text-shadow: none;
+    }
+    .start i{
+        margin-top: 6px;
+        color:#ffc120;
+        padding: 2px;
+    }
+    .span-XDG{
+        margin-left: 15px;
+        color: #666;
+        font-weight: 500;
+        font-size: 10px;
+        cursor: pointer;
+        font-weight: bold;
+        border: 1px solid slategray;
+        padding: 2px;
+    }
+
+.onl-price-all{
+    width: 100%;
+    height: 205px;
+    margin-top: 20px;
+}
+    .onl-price-top{
+        width : 100%;
+        height: 50%;
+    }
+        .price-top-left{
+            width : 25%;
+            height: 100%;
+            float: left;
+            padding: 5px;
+            color: #666;
+            font-size: 13px;
+        }
+        .price-top-right{
+            width : 75%;
+            height: 100%;
+            float: left;
+        }
+
+    .onl-price-bot{
+        width : 100%;
+        height: 50%;
+        border-top: 1px solid rgb(221, 220, 220);
+    }
+        .price-bot-left{
+            width : 25%;
+            height: 100%;
+            float: left;
+            padding: 5px;
+            margin-top: 5px;
+            color: #666;
+            font-size: 13px;
+        }
+            .on-spann{
+                color: #d10a00;
+                font-weight: bold;
+            }
+            .on-span{
+                font-size: 13px;
+                color: #666;
+            }
+        .price-bot-right{
+            width : 75%;
+            height: 100%;
+            float: left;
+            padding: 5px;
+            margin-top: 5px;
+            color: #666;
+            font-size: 12px;
+        }
+            .discount-tag{
+                background: #f98d00;
+                color: #fff;
+                padding: 1px 6px;
+                border-radius: 2px;
+                font-size: 12px;
+                position: relative;
+            }
+            .tag-text-one{
+                margin-left: 30px;
+            }
+            .tag-text-two{
+                margin-left: 30px;
+            }
+            .tag-text-three{
+                margin-left: 65px;
+            }
+
+.transport{
+    width : auto;
+    height: 80px;
+    border-top: 1px solid rgb(221, 220, 220);
+}
+    .transport-left{
+        width: 25%;
+        height: auto;
+        float: left;
+    }
+        .transport-left p{
+            color: #666;
+            font-size: 13px;
+            padding: 25px 0px 0px 5px;
+        }
+    .transport-right{
+        width : 75%;
+        height: auto;
+        float: left;
+    }
+        .transport-right img{
+            width: 28px;
+            height: auto;
+            padding: 20px 0px 0px 5px;
+        }
+        .transport-right span{
+            position: absolute;
+            color: #666;
+            font-size: 12px;
+            margin-left: 10px;
+            padding: 25px 0px 0px 5px;
+        }
+
+.onl-add-button{
+    width:100%;
+    height: 80px;
+    border-top: 1px solid rgb(221, 220, 220);
+}
+    .onl-add-button-left{
+        width:25%;
+        height: 80px;
+        float: left;
+    }
+        .onl-add-button-left p{
+            color: #666;
+            font-size: 13px;
+            padding: 25px 0px 0px 5px;
+        }
+    .onl-add-button-right{
+        width: 75%;
+        height: 80px;
+        float: left;
+    }
+        .button-plus{
+            float: left;
+            width:auto;
+            color: #666;
+            font-size: 13px;
+            padding: 25px 0px 0px 5px;
+        }
+        .button-minus{
+            float: left;
+            width:auto;
+            color: #666;
+            font-size: 13px;
+        }
+        .button-mid{
+            color: #666;
+            font-size: 13px;
+            padding: 25px 0px 0px 5px;
+        }
+            .button-mid input{
+                float: left;
+                width:24px;
+                height: 24px;
+            }
+
+.two-button{
+    width: 100%;
+    height: 80px;
+}
+    .button-one{
+        width : 25%;
+        height: 80px;
+        float: left;
+        padding-top: 17px;
+    }
+        .button-one button{
+            background-color: #d10a00 !important;
+            border-color: #d10a00 !important;
+            color: #fff;
+            border-radius: 2px 2px 2px 2px;
+            padding:9px 9px;
+            text-align: center;
+            font-weight: bold;
+            width : 90%;
+        }
+    .button-two{
+        width : 55%;
+        height: 80px;
+        float: left;
+        padding-top: 17px;
+    }
+        .button-two button{
+            background-color: #fff !important;
+            border-color: red !important;
+            color: #d10a00;
+            border-radius: 2px 2px 2px 2px;
+            padding:9px 9px;
+            text-align: center;
+            font-weight: bold;
+            width : 60%;
+        }
+        .button-two img{
+            width: 20px;
+            height: auto;
+            margin-right: 3px;
+        }
+    .button-three{
+        width : 20%;
+        height: 80px;
+        float: left;
+        padding-top: 17px;
+        cursor: pointer;
+    }
+        .button-three img{
+            width: 30px;
+            height: auto;
+            margin-right: 3px;
+        }
+        .button-three a{
+            text-decoration: none;
+            color: gray;
+            font-weight: bold;
+        }
+        .button-three-border{
+            border: 1px solid rgb(182, 181, 181);
+            padding: 5px;
+        }
+/*--------------------------*/
+
