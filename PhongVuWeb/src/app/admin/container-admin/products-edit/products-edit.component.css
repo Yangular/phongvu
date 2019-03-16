@@ -3,10 +3,12 @@
     src: url(../../../../assets/fonts/UVF.ttf);
 }
 h2#nameForm {
-    color:rgb(12, 240, 114);
+    color:rgb(8, 143, 69);
     text-align: center;
     font-family: 'FontUVF.font';
     font-size: 50px;
+    text-shadow: 2px 2px 8px #f0f0f0;
+    font-weight: bold;
 }
 .formAdd {
     padding: 5px;
@@ -41,8 +43,8 @@ form .row {
     font-weight: bold;
     width: 150px;
     padding: 6px 0;
-    color:#26148d;
-    text-shadow: 2px 2px 8px #FF0000;
+    color:#f0f0f0;
+    text-shadow: 2px 2px 8px rgb(12, 240, 114);
     vertical-align: top;
   }
 
@@ -97,7 +99,7 @@ form .row {
     background-color: #fff;
     background-position: 110% center;
     background-repeat: no-repeat;
-    border-color: #059;
+    border-color: rgb(12, 90, 12);
     -webkit-box-shadow: 0 1px 4px -1px #a8a8a8 inset, 0 1px rgba(255, 255, 255, 0.6), 0 0 11px rgba(70, 100, 200, 0.7);
     -moz-box-shadow: 0 1px 4px -1px #a8a8a8 inset, 0 1px rgba(255, 255, 255, 0.6), 0 0 11px rgba(70, 100, 200, 0.7);
     box-shadow: 0 1px 4px -1px #a8a8a8 inset, 0 1px rgba(255, 255, 255, 0.6), 0 0 11px rgba(70, 100, 200, 0.7);
@@ -126,8 +128,8 @@ form .row {
     font-size: 17px;
     font-weight: 600;
     padding: 10px 50px;
-    background-color: rgba(224, 43, 11, 0.34);
-    border: 3px solid rgba(224, 43, 11, 0.43);
+    background-color: rgba(73, 233, 41, 0.34);
+    border: 3px solid rgba(103, 241, 126, 0.43);
     -webkit-box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.71);
     -moz-box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.71);
     box-shadow: 0 12px 32px 0 rgba(0, 0, 0, 0.71);
@@ -143,5 +145,5 @@ form .row {
 }
 .submit-agileits input[type="submit"]:hover {
     color: #ffffff;
-    border-color: red;
+    border-color:rgb(41, 221, 41);
 }

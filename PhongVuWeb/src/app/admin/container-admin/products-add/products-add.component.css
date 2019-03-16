@@ -4,10 +4,11 @@
 }
 
 h2#nameForm {
-    color:rgb(12, 240, 114);
+    color:rgb(248, 84, 19);
     text-align: center;
     font-family: 'FontUVF.font';
-    font-size: 50px;
+    text-shadow: 2px 2px 8px #f1f3f7;
+    font-size: 60px;
 }
 
 .formAdd {
@@ -39,11 +40,12 @@ form .row {
    
   form label {
     display: inline-block;
+    text-shadow: 2px 2px 8px #FF0000;
     font-size: 1.2em;
     font-weight: bold;
     width: 150px;
     padding: 6px 0;
-    color:#32c2e6;
+    color:#f1f3f7;
     vertical-align: top;
   }
 
@@ -98,7 +100,7 @@ form .row {
     background-color: #fff;
     background-position: 110% center;
     background-repeat: no-repeat;
-    border-color: #059;
+    border-color: rgb(248, 84, 19);
     -webkit-box-shadow: 0 1px 4px -1px #a8a8a8 inset, 0 1px rgba(255, 255, 255, 0.6), 0 0 11px rgba(70, 100, 200, 0.7);
     -moz-box-shadow: 0 1px 4px -1px #a8a8a8 inset, 0 1px rgba(255, 255, 255, 0.6), 0 0 11px rgba(70, 100, 200, 0.7);
     box-shadow: 0 1px 4px -1px #a8a8a8 inset, 0 1px rgba(255, 255, 255, 0.6), 0 0 11px rgba(70, 100, 200, 0.7);

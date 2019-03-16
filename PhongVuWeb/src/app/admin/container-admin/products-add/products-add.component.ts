@@ -21,6 +21,10 @@ export class ProductsAddComponent implements OnInit {
   ) { }
 
   onCreate(){
+    this._products = {
+      is_active : true
+    }
+    console.log(this._products);
     this._subscription = this.productservice.CreateAllproducts(this._products).subscribe( data => {
       if(data && data['_id']){
         this.router.navigate(['/admin']);
