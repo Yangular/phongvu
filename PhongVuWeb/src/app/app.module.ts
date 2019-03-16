@@ -21,7 +21,7 @@ import { MenuAdminComponent } from './admin/menu-admin/menu-admin.component';
 import { ContainerAdminComponent } from './admin/container-admin/container-admin.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { ProductsListComponent } from './admin/container-admin/products-list/products-list.component';
-import { ProductsDetailsComponent } from './admin/container-admin/products-details/products-details.component';
+import { ProductsEditComponent } from './admin/container-admin/products-edit/products-edit.component';
 
 //router-service
 import { appRoutes } from './app.router';
@@ -47,7 +47,7 @@ import { ProductDetailComponent } from './home/product-detail/product-detail.com
     ContainerAdminComponent,
     LoginAdminComponent,
     ProductsListComponent,
-    ProductsDetailsComponent,
+    ProductsEditComponent,
     ProductsAddComponent,
 
     MainComponent,

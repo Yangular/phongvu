@@ -2,16 +2,15 @@
     margin-top:1em;
 }
 #main .container{
-    min-width:85%;
+    width: 1200px;
 }
 /* row One */
 .rowOne{
-    padding:1% 0;
     background:#d3d4d4;
-    
+    max-width:100%;
 }
 .rowOne marquee{
-    max-width:95%;
+    max-width:100%;
 }
 .rowOne a{
     margin-right:15em;
@@ -25,13 +24,18 @@
     margin-top: 1em;
     background:white;
     display:flex;
-    margin-left: -20px;
+    margin-left: -15px;
 }
 .rowTwo-left{
     flex:1;
 }
+<<<<<<< HEAD
 .rowTwo-left > img{
     width: 190px;
+=======
+.rowTwo-left > img {
+    width: 200px;
+>>>>>>> 1caa13e689b817ec5a346f39f6c04e6e93fcc6ba
     height: 436px;
 }
 .rowTwo-right{
