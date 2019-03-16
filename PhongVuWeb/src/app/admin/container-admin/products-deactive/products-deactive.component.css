@@ -1,0 +1,43 @@
+@font-face{
+	font-family: 'FontUVF.font';
+    src: url(../../../../assets/fonts/UVF.ttf);
+}
+
+h2#nameForm {
+    color:rgb(12, 240, 114);
+    font-family: 'FontUVF.font';
+    font-size: 60px;
+}
+
+table {
+    border: 1px solid #fff;
+    
+    background: rgba(255, 255, 255, 0.5);
+}
+.table > thead > tr {
+    background-color: aquamarine;
+}   
+th {
+    border: 1px solid #fff;
+    text-align: center;     
+}
+td {
+    border: 1px solid #fff;
+    text-align: center; 
+    font-size: 16px;  
+}
+    td > img {
+        width: 150px;
+        height: 100px;
+    }
+    td > p {
+        padding-top: 40px;
+    }
+    td > #name {
+        text-align: left;
+        color: blue;
+        font-weight: bold;
+    }
+        button > a{
+            color: #fff;
+        }

@@ -1,0 +1,40 @@
+
+<div class="panel panel-default" style="background: rgba(255, 255, 255, 0.07);">
+  <div class="panel-heading" style="background: rgba(212, 73, 73, 0.5); color:aquamarine;">
+    <h2  id="nameForm">QUẢN LÝ DANH SÁCH CÁC SẢN PHẨM DEACTIVE</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>TITLE</th>
+                <th>IMAGES</th>
+                <th>PRICE</th>
+                <th>QUANTITY</th>
+                <th>IS_ACTIVE</th>
+                <th>CATEGORY</th>
+                <th>STASTUS</th>
+                <th>DISCOUNT</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of _products">
+                <td> <p id="name">{{ item.title }}</p> </td>
+                <td> <img [src]=" item.images"> </td>
+                <td> <p style="color:red">{{ item.price | currency:'VND' }}</p> </td>
+                <td> <p>{{ item.quantity | currency:'VND' }}</p> </td>
+                <td> <p>{{ item.is_active }}</p> </td>
+                <td> <p>{{ item.category }}</p> </td>
+                <td> <p>{{ item.status }}</p> </td>
+                <td> <p>{{ item.discount }}</p> </td>
+                <td><p><button type="button" class="btn btn-primary" (click)="onActive(item.id)">Active</button></p></td>
+            </tr> 
+        </tbody>
+    </table>
+    
+    <div class="button">
+        <button type="button" class="btn btn-danger" [routerLink]="['add']">--- Thêm Sản Phẩm Mới---</button>
+    </div>
+  </div>
+</div>

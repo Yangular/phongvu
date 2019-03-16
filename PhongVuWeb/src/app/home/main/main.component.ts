@@ -29,7 +29,7 @@ export class MainComponent implements OnInit, OnDestroy {
   }
 
   showProduct(){
-    this._subscription = this.productservice.getAllproducts(this._products).subscribe(data=> {
+    this._subscription = this.productservice.getAllproducts().subscribe(data=> {
       this._products = data['docs'];
     });
   }

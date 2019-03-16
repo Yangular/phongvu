@@ -28,6 +28,7 @@ import { appRoutes } from './app.router';
 import { AuthGuard } from './Service/Guards/auth.guard';
 import { ProductsService } from './Service/products.service';
 import { ProductsAddComponent } from './admin/container-admin/products-add/products-add.component';
+import { ProductsDeactiveComponent } from './admin/container-admin/products-deactive/products-deactive.component';
 
 
 
@@ -50,6 +51,8 @@ import { ProductsAddComponent } from './admin/container-admin/products-add/produ
     ProductsAddComponent,
 
     MainComponent,
+
+    ProductsDeactiveComponent,
   ],
   imports: [
     FormsModule,

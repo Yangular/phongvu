@@ -23,13 +23,13 @@
                     <td> <p id="name">{{ item.title }}</p> </td>
                     <td> <img [src]=" item.images"> </td>
                     <td> <p style="color:red">{{ item.price | currency:'VND' }}</p> </td>
-                    <td> <p>{{ item.quantity }}</p> </td>
+                    <td> <p>{{ item.quantity | currency:'VND' }}</p> </td>
                     <td> <p>{{ item.is_active }}</p> </td>
                     <td> <p>{{ item.category }}</p> </td>
                     <td> <p>{{ item.status }}</p> </td>
                     <td> <p>{{ item.discount }}</p> </td>
                     <td> <p><button type="button" class="btn btn-success"> <a [routerLink]="[ '/admin/edit', item.id ]">Edit</a></button> | 
-                         <button type="button" class="btn btn-primary" (click)="onDeactive()">Disable</button></p></td>
+                         <button type="button" class="btn btn-primary" (click)="onDeactive(item.id)">Disable</button></p></td>
                 </tr> 
             </tbody>
         </table>

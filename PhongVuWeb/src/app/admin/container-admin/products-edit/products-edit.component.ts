@@ -38,7 +38,7 @@ export class ProductsEditComponent implements OnInit, OnDestroy{
   ngOnDestroy() {
     if (this._subscription){
       this._subscription.unsubscribe();
-    }
+    };
     if (this._subscriptionParams){
       this._subscriptionParams.unsubscribe();
     }

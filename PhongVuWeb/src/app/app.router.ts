@@ -7,9 +7,11 @@ import { ProductsAddComponent } from './admin/container-admin/products-add/produ
 import { ProductsEditComponent } from './admin/container-admin/products-edit/products-edit.component';
 import { ProductsListComponent } from './admin/container-admin/products-list/products-list.component';
 import { HomeComponent } from './home/home.component';
+import { ProductsDeactiveComponent } from './admin/container-admin/products-deactive/products-deactive.component';
 
 //CanActivate
 import { AuthGuard } from './Service/Guards/auth.guard';
+
 
 export const appRoutes: Routes = [
   {
@@ -40,6 +42,10 @@ export const appRoutes: Routes = [
       {
         path: 'add',
         component: ProductsAddComponent
+      },
+      {
+        path: 'deactive',
+        component: ProductsDeactiveComponent
       },
       {
         path: 'edit/:id',

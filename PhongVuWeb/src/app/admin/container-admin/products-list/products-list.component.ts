@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from '../../../models/products.class';
-import { Subscription } from 'rxjs';
 import { ProductsService } from '../../../Service/products.service';
-import { Router, ActivatedRoute, Params } from '@angular/router';
-
 
 @Component({
   selector: 'app-products-list',
@@ -12,32 +9,33 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 })
 export class ProductsListComponent implements OnInit {
 
-  public _subscription: Subscription;
-  public _subscriptionParams: Subscription;
-  public _products : products = {};
+  public _products: products = [];
+  public _productsDetail: products = [];
 
   constructor(
-    public productservice : ProductsService,
-    private activeRouterService: ActivatedRoute,
+    public productservice: ProductsService,
   ) { }
 
   ngOnInit() {
-    this._subscription = this.productservice.getAllproducts(this._products).subscribe(data=> {
+    this.loadProduct();
+  }
+
+  loadProduct(){
+    this.productservice.getAllproducts().subscribe(data => {
       this._products = data;
     });
   }
 
-  getID() {
-    this._subscriptionParams = this.activeRouterService.params.subscribe((data : Params) =>{
-      this._subscription = this.productservice.getProductDetail(data['id']).subscribe((products: products) =>{
-        this._products = products;
+  onDeactive(id: string) {
+    console.log(id);
+    this.productservice.getProductDetail(id).subscribe(data => {
+      this._products = data;
+      console.log(this._products)
+      this.productservice.getProductDeactive(this._products).subscribe(data => {
+        this.loadProduct();
+        console.log(data);
       })
     })
-  }
-  ngOnDestroy() {
-    if(this._subscription){
-      this._subscription.unsubscribe();
-    }
-  }
 
+  }
 }
