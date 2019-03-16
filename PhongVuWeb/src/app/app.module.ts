@@ -28,7 +28,11 @@ import { appRoutes } from './app.router';
 import { AuthGuard } from './Service/Guards/auth.guard';
 import { ProductsService } from './Service/products.service';
 import { ProductsAddComponent } from './admin/container-admin/products-add/products-add.component';
+<<<<<<< HEAD
 import { ProductsDeactiveComponent } from './admin/container-admin/products-deactive/products-deactive.component';
+=======
+import { ProductDetailComponent } from './home/product-detail/product-detail.component';
+>>>>>>> 3c30f75175a829ee4049a9817c125dddc0c7c8c5
 
 
 
@@ -52,7 +56,11 @@ import { ProductsDeactiveComponent } from './admin/container-admin/products-deac
 
     MainComponent,
 
+<<<<<<< HEAD
     ProductsDeactiveComponent,
+=======
+    ProductDetailComponent,
+>>>>>>> 3c30f75175a829ee4049a9817c125dddc0c7c8c5
   ],
   imports: [
     FormsModule,

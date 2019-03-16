@@ -29,8 +29,13 @@
 .rowTwo-left{
     flex:1;
 }
+<<<<<<< HEAD
+.rowTwo-left > img{
+    width: 190px;
+=======
 .rowTwo-left > img {
     width: 200px;
+>>>>>>> 1caa13e689b817ec5a346f39f6c04e6e93fcc6ba
     height: 436px;
 }
 .rowTwo-right{
