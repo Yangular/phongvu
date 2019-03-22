@@ -8,10 +8,11 @@ import { ProductsEditComponent } from './admin/container-admin/products-edit/pro
 import { ProductsListComponent } from './admin/container-admin/products-list/products-list.component';
 import { HomeComponent } from './home/home.component';
 import { ProductsDeactiveComponent } from './admin/container-admin/products-deactive/products-deactive.component';
+import { ProductDetailComponent } from './home/product-detail/product-detail.component';
+import { MainComponent } from './home/main/main.component';
 
 //CanActivate
 import { AuthGuard } from './Service/Guards/auth.guard';
-
 
 export const appRoutes: Routes = [
   {
@@ -22,7 +23,17 @@ export const appRoutes: Routes = [
 
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    children: [
+      {
+        path: '',
+        component: MainComponent,
+      },
+      {
+        path: 'detail',
+        component: ProductDetailComponent,
+      }
+    ]
   },
 
   {

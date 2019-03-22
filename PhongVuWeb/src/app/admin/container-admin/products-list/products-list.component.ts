@@ -27,15 +27,11 @@ export class ProductsListComponent implements OnInit {
   }
 
   onDeactive(id: string) {
-    console.log(id);
     this.productservice.getProductDetail(id).subscribe(data => {
       this._products = data;
-      console.log(this._products)
       this.productservice.getProductDeactive(this._products).subscribe(data => {
         this.loadProduct();
-        console.log(data);
       })
     })
-
   }
 }

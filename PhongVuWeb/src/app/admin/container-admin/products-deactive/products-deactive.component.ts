@@ -24,4 +24,12 @@ export class ProductsDeactiveComponent implements OnInit {
     });
   }
 
+  onActive(id: string) {
+    this.productservice.getProductDetail(id).subscribe(data => {
+      this._products = data;
+      this.productservice.getProductActive(this._products).subscribe(data => {
+        this.loadShowDeactive();
+      })
+    })
+  }
 }
