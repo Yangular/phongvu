@@ -1,15 +1,17 @@
 #product-detail-all{
     width : 100%;
-    height: 1000px;
+    margin: auto;
+    height: auto;
     background-color: rgb(245, 245, 245);
+    margin-top : 10px;
+    margin-bottom : 10px;
 }
 
 .detail-full-in{
     width : 80%;
-    height: 1000px;
+    height: 700px;
     margin: auto;
-    background: #fff;
-    margin-top: -5px;
+    /* background: #fff; */
     padding: 6px;
 }
 
@@ -116,12 +118,9 @@
         margin-left: 10px;
     }
 
-
-
-
 .detail-right{  
     width : 60%;
-    height: 1000px;
+    height: 655px;
     float: left;
 }
     .title h4{
@@ -316,7 +315,7 @@
             width : 90%;
         }
     .button-two{
-        width : 55%;
+        width : 50%;
         height: 80px;
         float: left;
         padding-top: 17px;
@@ -329,7 +328,7 @@
             padding:9px 9px;
             text-align: center;
             font-weight: bold;
-            width : 60%;
+            width : 70%;
         }
         .button-two img{
             width: 20px;
@@ -337,7 +336,7 @@
             margin-right: 3px;
         }
     .button-three{
-        width : 20%;
+        width : 25%;
         height: 80px;
         float: left;
         padding-top: 17px;

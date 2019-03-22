@@ -24,19 +24,21 @@
     <!-- /.search form -->
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
-      <li class="active treeview">
-        <a [routerLink]="['/admin/']">
+      <li class="treeview">
+        <a>
           <i class="fa fa-table"></i><span>Danh sách sản phẩm</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
         </a>
+        <ul class="treeview-menu">
+          <li><a [routerLink]="['/admin/']"><i class="fas fa-angle-right"></i > Active </a></li>
+          <li><a [routerLink]="['deactive']"><i class="fas fa-angle-right"></i> Deactive</a></li>
+        </ul>
       </li>
       <li class="treeview">
         <a [routerLink]="['add']">
           <i class="fa fa-edit"></i> <span>Thêm Sản Phẩm <span style="color:red">Mới!!!</span></span>
-        </a>
-      </li>
-      <li class="treeview">
-        <a [routerLink]="['deactive']">
-          <i class="fa fa-table"></i> <span>Danh Sách SP Deactive</span>
         </a>
       </li>
       <li class="treeview">
