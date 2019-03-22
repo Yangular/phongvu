@@ -29,13 +29,11 @@
 .rowTwo-left{
     flex:1;
 }
-<<<<<<< HEAD
 .rowTwo-left > img{
     width: 190px;
-=======
+}
 .rowTwo-left > img {
     width: 200px;
->>>>>>> 1caa13e689b817ec5a346f39f6c04e6e93fcc6ba
     height: 436px;
 }
 .rowTwo-right{
@@ -139,12 +137,12 @@
 
 
 /* row three */
-.rowThree{
+.rowThree{ 
     margin-top:1em;
     background:#C40316;
     display: flex;
     text-align:center;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 }
 .rowThree i{
     color:white;
@@ -159,7 +157,7 @@
 .rowThree h3{
     color:#FE9595;
     font-weight:700;
-    font-size:1.5em;
+    font-size:1.2em;
     margin-top:5px;
 }
 .rowThree p{

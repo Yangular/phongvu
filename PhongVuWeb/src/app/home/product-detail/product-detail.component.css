@@ -156,7 +156,7 @@
         height: 50%;
     }
         .price-top-left{
-            width : 25%;
+            width : 20%;
             height: 100%;
             float: left;
             padding: 5px;
@@ -164,7 +164,7 @@
             font-size: 13px;
         }
         .price-top-right{
-            width : 75%;
+            width : 80%;
             height: 100%;
             float: left;
         }
@@ -175,7 +175,7 @@
         border-top: 1px solid rgb(221, 220, 220);
     }
         .price-bot-left{
-            width : 25%;
+            width : 20%;
             height: 100%;
             float: left;
             padding: 5px;
@@ -192,7 +192,7 @@
                 color: #666;
             }
         .price-bot-right{
-            width : 75%;
+            width : 80%;
             height: 100%;
             float: left;
             padding: 5px;
@@ -224,7 +224,7 @@
     border-top: 1px solid rgb(221, 220, 220);
 }
     .transport-left{
-        width: 25%;
+        width: 20%;
         height: auto;
         float: left;
     }
@@ -234,7 +234,7 @@
             padding: 25px 0px 0px 5px;
         }
     .transport-right{
-        width : 75%;
+        width : 80%;
         height: auto;
         float: left;
     }
@@ -257,7 +257,7 @@
     border-top: 1px solid rgb(221, 220, 220);
 }
     .onl-add-button-left{
-        width:25%;
+        width:20%;
         height: 80px;
         float: left;
     }
@@ -267,7 +267,7 @@
             padding: 25px 0px 0px 5px;
         }
     .onl-add-button-right{
-        width: 75%;
+        width: 80%;
         height: 80px;
         float: left;
     }
