@@ -22,7 +22,6 @@ export class ProductsService {
 
   constructor(
     private http: HttpClient,
-    private _router: Router,
   ) {
     this.headers = this.setHeaders();
   }
@@ -47,26 +46,26 @@ export class ProductsService {
   }
 
   // Thêm sản phẩm mới
-  CreateAllproducts(product: products) : Observable<products[]>{
-    return this.http.post<products[]>(urlcreate, product, {headers: this.headers});
+  CreateAllproducts(product: products) : Observable<products>{
+    return this.http.post<products>(urlcreate, product, {headers: this.headers});
   }
 
   // truyền dữ liệu theo ID - update sản phẩm
-  getProductDetail (id: string) : Observable<products[]> {
-    return this.http.get<products[]>(`${urldetail}/${id}`, {headers: this.headers});
+  getProductDetail (id: string) : Observable<products> {
+    return this.http.get<products>(`${urldetail}/${id}`, {headers: this.headers});
   }
     UpdateProductsID(product: products) : Observable<products>{
       return this.http.put<products>(`${urledit}/${product['_id']}`, product, {headers: this.headers});
     }
 
   // DeActive sản phẩm
-  getProductDeactive (product: products) : Observable<products[]> {
-    return this.http.put<products[]>(`${urldeactive}/${product['_id']}`, product, {headers: this.headers});
+  getProductDeactive (product: products) : Observable<products> {
+    return this.http.put<products>(`${urldeactive}/${product['_id']}`, product, {headers: this.headers});
   }
 
   // Active sản phẩm
-  getProductActive (product: products) : Observable<products[]> {
-    return this.http.put<products[]>(`${urlactive}/${product['_id']}`, product, {headers: this.headers});
+  getProductActive (product: products) : Observable<products> {
+    return this.http.put<products>(`${urlactive}/${product['_id']}`, product, {headers: this.headers});
   }
   
 }

@@ -2,26 +2,10 @@
 <div id="bannerNav" class="bannerNav-bannerNavOne">
   <div class="container">
     <div class="col-md-2 bannerNav-left">
-      <ul class="navPrimaryOne">
-          <li>Tivi và thiết bị thông minh</li>
-          <li>Hàng cao cấp gaming</li>
-          <li>PC và Linh kiện</li>
-          <li>Laptop và linh kiện, Macbook</li>
-          <li>Màn hình máy tính</li>
-          <li>Thiết bị ngoại vi</li>
-          <li>Văn phòng, Mạng, An ninh</li>
-          <li>Phần mền và Phụ kiên</li>
-          <li>Hàng Trưng Bày</li>
-          <li>Deal choáng ngợp</li>
-          <li>PVMail - ACER</li>
-          <li>PVMail - AMD</li>
-          <li>PVMail - MICROSOFT</li>
-          <li>PVMail - WESTERN DIGITAL</li>
-      </ul>
+      <app-nav></app-nav>
     </div>
     
     <div class="col-md-7 bannerNav-center">
-      <!-- <img src="./assets/img/banner/banner18.png"> -->
       <div class="bannerSlider tab-content">
         <div id="bannerSlider-1" class="tab-pane fade in active">
           <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -237,13 +221,14 @@
 
 			<!-- row two -->
 			<div class="rowTwo">
-				<div class="col-md-3 rowTwo-left">
+				<div class="col-md-4 rowTwo-left">
           <img src="./assets/img/banner/san_tv.png">
 					<!-- <p>Xem tất cả</p> -->
 				</div>
-				<div class="col-md-10 rowTwo-right">
-					<div class="responsive rowTwoProduct-responsive"> 
+				<div class="col-md-8 rowTwo-right">
+					<div class="responsive rowTwoProduct-responsive">
 						<div class="rowProduct-box" *ngFor="let item of _products">
+							<a [routerLink]="['detail', item.id ]">
 							<img [src]="item.images ? item.images : '' " class="img-responsive" alt="Image">
 							<p class="nameProduct"> {{ item.title }} </p>
 							<p class="price">{{ item.price | currency:'VND' }} </p>
@@ -253,15 +238,16 @@
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
 								<i class="fas fa-star"></i>
-								<i class="fas fa-star-half-alt"></i>
+								<i class="fas fa-star"></i>
 							</p>
 							<p class="gifts">
-								<i class="fas fa-gifts"></i>
+								<i class="fas fa-gift"></i>
 							</p>
 							<div class="meter">
 								<!-- <i class="fas fa-carrot"></i> -->
 								<span>Còn lại: {{ item.quantity }}</span>
 							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -269,15 +255,14 @@
 
 			<!-- row three -->
 			<div class="rowThree">
-				<div class="col-md-2">
+				<div class="col-md-4">
           <!-- <i class="fas fa-business-time"></i> -->
             <img src="./assets/img/flsale3.png" width="40px" height="40px">
             <br>
 					<span><b>Giờ vàng giá sốc</b></span>
 				</div>
-				<div class="col-md-2"></div>
 				<div class="col-md-2 rowThree-active">
-					<h3>11:00</h3>
+					<h3>8:00</h3>
 					<p>Đang diễn ra</p>
 				</div>
 				<div class="col-md-2">
@@ -285,11 +270,11 @@
 					<p>Sắp diễn ra</p>
 				</div>
 				<div class="col-md-2">
-					<h3>11:00</h3>
+					<h3>16:00</h3>
 					<p>Sắp diễn ra</p>
 				</div>
 				<div class="col-md-2">
-					<h3>11:00</h3>
+					<h3>22:00</h3>
 					<p>Ngày mai</p>
 				</div>
 			</div>
@@ -308,10 +293,10 @@
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
+							<i class="fas fa-star"></i>
 						</p>
 						<p class="gifts">
-							<i class="fas fa-gifts"></i>
+							<i class="fas fa-gift"></i>
 						</p>
 						<div class="meter">
 							<!-- <i class="fas fa-carrot"></i> -->
@@ -340,10 +325,10 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half-alt"></i>
+						<i class="fas fa-star"></i>
 					</p>
 					<p class="gifts">
-						<i class="fas fa-gifts"></i>
+						<i class="fas fa-gift"></i>
 					</p>
 				</div>
 				<div class="rowProduct-box">
@@ -356,10 +341,10 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half-alt"></i>
+						<i class="fas fa-star"></i>
 					</p>
 					<p class="gifts">
-						<i class="fas fa-gifts"></i>
+						<i class="fas fa-gift"></i>
 					</p>
 				</div>
 
@@ -373,10 +358,10 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half-alt"></i>
+						<i class="fas fa-star"></i>
 					</p>
 					<p class="gifts">
-						<i class="fas fa-gifts"></i>
+						<i class="fas fa-gift"></i>
 					</p>
 				</div>
 
@@ -390,10 +375,10 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half-alt"></i>
+						<i class="fas fa-star"></i>
 					</p>
 					<p class="gifts">
-						<i class="fas fa-gifts"></i>
+						<i class="fas fa-gift"></i>
 					</p>
 				</div>
 
@@ -407,10 +392,10 @@
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="fas fa-star-half-alt"></i>
+						<i class="fas fa-star"></i>
 					</p>
 					<p class="gifts">
-						<i class="fas fa-gifts"></i>
+						<i class="fas fa-gift"></i>
 					</p>
 				</div>
 			</div><!-- /row five -->
@@ -442,10 +427,10 @@
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
+							<i class="fas fa-star"></i>
 						</p>
 						<p class="gifts">
-							<i class="fas fa-gifts"></i>
+							<i class="fas fa-gift"></i>
 						</p>
 					</div>
 					<div class="rowProduct-box">
@@ -458,10 +443,10 @@
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
+							<i class="fas fa-star"></i>
 						</p>
 						<p class="gifts">
-							<i class="fas fa-gifts"></i>
+							<i class="fas fa-gift"></i>
 						</p>
 					</div>
 					<div class="rowProduct-box">
@@ -474,10 +459,10 @@
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
+							<i class="fas fa-star"></i>
 						</p>
 						<p class="gifts">
-							<i class="fas fa-gifts"></i>
+							<i class="fas fa-gift"></i>
 						</p>
 					</div>
 					<div class="rowProduct-box">
@@ -490,10 +475,10 @@
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
+							<i class="fas fa-star"></i>
 						</p>
 						<p class="gifts">
-							<i class="fas fa-gifts"></i>
+							<i class="fas fa-gift"></i>
 						</p>
 					</div>
 				</div>
@@ -540,10 +525,10 @@
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star-half-alt"></i>
+							<i class="fas fa-star"></i>
 						</p>
 						<p class="gifts">
-							<i class="fas fa-gifts"></i>
+							<i class="fas fa-gift"></i>
 						</p>
 						<div class="meter">
 							<!-- <i class="fas fa-carrot"></i> -->

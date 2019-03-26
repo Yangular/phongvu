@@ -1,0 +1,50 @@
+<div class="formAdd">
+    <h2 id="nameForm">ADD PRODUCT</h2>
+    <form (ngSubmit)="onSubmit(formAdd)" #formAdd="ngForm">
+
+        <div class="row">
+            <label for="TITLE">TITLE:</label>
+            <input type="text" class="txt" placeholder="TITLE" required name="title" #title="ngModel" [(ngModel)]="_products.title">
+        </div>
+
+        <div class="row">
+            <label for="IMAGE">IMAGE:</label>
+            <input class="txt" type="file" id="exampleInputFile" name="pic" #pic="ngModel" [(ngModel)]="_products.pic">
+        </div>
+
+        <div class="row">
+            <label for="PRICE">PRICE:</label>
+            <input type="number" class="txt" placeholder="PRICE" required name="price" #price="ngModel" [(ngModel)]="_products.price">
+        </div>
+
+        <div class="row">
+            <label for="QUANTITY">QUANTITY:</label>
+            <input type="number" class="txt" placeholder="QUANTITY" required name="quantity" #quantity="ngModel" [(ngModel)]="_products.quantity">
+        </div>
+
+        <div class="row">
+            <label for="CATEGORY">CATEGORY:</label>
+            <input type="text" class="txt" placeholder="CATEGORY" required name="category" #category="ngModel" [(ngModel)]="_products.category">
+        </div>
+
+        <div class="row">
+            <label for="STASTUS">STASTUS:</label>
+            <select type="text" name="status" class="txt" required #status="ngModel" [(ngModel)]="_products.status">
+                <option value="selling">Selling</option>
+                <option value="Empty">Empty</option>
+                <option value="Pending">Pending</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label for="DISCOUNT">DISCOUNT:</label>
+            <input type="number" class="txt" placeholder="DISCOUNT" required name="discount" #discount="ngModel" [(ngModel)]="_products.discount">
+        </div>
+
+        <div class="submit">
+            <div class="submit-agileits">
+                <input type="submit" value="Thêm Sản Phẩm">
+            </div>
+        </div>
+    </form>
+</div>

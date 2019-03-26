@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { products } from '../../../models/products.class';
-import { Subscription } from 'rxjs';
-import { ProductsService } from '../../../Service/products.service';
+import { products } from '../../../../models/products.class';
+import { ProductsService } from '../../../../Service/products.service';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
 
@@ -12,7 +11,6 @@ import Swal from 'sweetalert2';
 })
 export class ProductsAddComponent implements OnInit {
 
-  public _subscription: Subscription;
   public _products : products = {};
 
   constructor(
@@ -21,11 +19,7 @@ export class ProductsAddComponent implements OnInit {
   ) { }
 
   onCreate(){
-    this._products = {
-      is_active : true
-    }
-    console.log(this._products);
-    this._subscription = this.productservice.CreateAllproducts(this._products).subscribe( data => {
+    this.productservice.CreateAllproducts(this._products).subscribe( data => {
       if(data && data['_id']){
         this.router.navigate(['/admin']);
       }
@@ -48,9 +42,6 @@ export class ProductsAddComponent implements OnInit {
   }
 
   ngOnDestroy() {
-    if(this._subscription){
-      this._subscription.unsubscribe();
-    }
   }
 
 }

@@ -1,0 +1,20 @@
+<div class="panel panel-default" style="background: rgba(255, 255, 255, 0.07);">
+  <div class="panel-heading" style="background: rgba(212, 73, 73, 0.5); color:aquamarine;">
+    <h2  id="nameForm"><i class="fa fa-edit"></i> ADD CATEGORY</h2>
+  </div>
+  <div class="form-add-category">
+    <form (ngSubmit)="onSubmit(formAddcategory)" #formAddcategory="ngForm">
+      <div class="form-group">
+        <label for="name-category">Name Category:</label>
+        <input type="text" class="form-control" placeholder="Name Category" required name="category" #namecategory="ngModel" [(ngModel)]="_category.name">
+      </div>
+      <div class="form-group">
+        <label for="sub-category">Sub-Category:</label>
+        <tag-input [identifyBy]="'name'" [displayBy]="'name'" required name="sub-category" #sub_category="ngModel" [(ngModel)]="_category.sub_category"></tag-input>
+      </div>
+
+      <button type="submit" class="btn btn-primary">CREATE CATEGORY</button>
+    </form>
+    
+  </div>
+</div>

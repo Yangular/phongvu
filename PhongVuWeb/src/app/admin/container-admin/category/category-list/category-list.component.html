@@ -1,0 +1,38 @@
+
+<div class="panel panel-default" style="background: rgba(255, 255, 255, 0.07);">
+  <div class="panel-heading" style="background: rgba(212, 73, 73, 0.5); color:aquamarine;">
+    <h2  id="nameForm">ACTIVE CATEGORY</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>IS_ACTIVE</th>
+                <th>SUB_CATEGORY</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of _category | paginate : {itemsPerPage:10, currentPage: p}">
+                <td> <p id="name">{{ item.name }}</p> </td>
+                <td> <p>{{ item.is_active }}</p> </td>
+                <td> <p *ngFor="let items of item.sub_category">{{ items.name }}</p> </td>
+                <td> <p><button type="button" class="btn btn-success"> <a [routerLink]="[ '/admin/category-edit', item._id ]">Edit</a></button> | 
+                     <button type="button" class="btn btn-primary" (click)="onDeactive(item._id)">Disable</button></p></td>
+            </tr> 
+        </tbody>
+    </table>
+    <div class="row">
+      <pagination-controls 
+          (pageChange)="p = $event"  
+          maxSize="7"
+          previousLabel="Previous"
+          nextLabel="Next">
+      </pagination-controls>
+    </div>
+    <div class="button">
+        <button type="button" class="btn btn-danger" [routerLink]="['add']">--- Add Sub-Category ---</button>
+    </div>
+  </div>
+</div>

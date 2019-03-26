@@ -1,7 +1,14 @@
 #product-detail-all{
     width : 1200px;
-    margin: 0 auto;
-    background-color: rgb(245, 245, 245);
+    margin: auto;
+    height: auto;
+    margin-top : 10px;
+    margin-bottom : 10px;
+}
+
+.detail-full-in{
+    width:100%;
+    height: 650px;
 }
 
 .detail-left{
@@ -9,114 +16,52 @@
     height: auto;
     float: left;
 }
-    .detail-left-topimg{
-        width : 100%;
-        height: 395px;
-        margin-top: 0px;
+.image-detail {
+    width: 85%;
+    margin: 0 auto;
+}
+    .image-detail > img{
+        width: 400px;
+        height: 400px;
     }
-         .detail-left-topimg img{
-            margin-left: 0px;
-            height: 100%;
-            width :100%;
-        }
-
     .detail-left-botimg{
         width : 100%;
         height: 70px;
-        margin-top: 0px;
     }
-    .bot-img-one{
+    .bot-img{
         width : 20%;
-        height: 100%;
         float: left;
     }
-        .bot-img-one:hover{
+        .bot-img:hover{
             border: 2px solid red;
         }
-        .bot-img-one > img {
+        .bot-img > img {
             width : 66px;
             height: 66px;
             margin-left: 7px;
         }
-    .bot-img-two{
-        width : 15%;
-        height: 100%;
-        float: left;
-    }
-        .bot-img-two:hover{
-            border: 2px solid red;
-        }
-        .bot-img-two > img {
-            width : 60px;
-            height: 55px;
-            margin-top: 5px;
-        }
-    .bot-img-three{
-        width : 20%;
-        height: 100%;
-        float: left;
-    }
-        .bot-img-three:hover{
-            border: 2px solid red;
-        }
-        .bot-img-three > img {
-            width : 66px;
-            height: 55px;
-            margin-top: 5px;
-            margin-left: 9px;
-        }
-    .bot-img-four{
-        width : 20%;
-        height: 100%;
-        float: left;
-    }
-        .bot-img-four:hover{
-            border: 2px solid red;
-        }
-        .bot-img-four > img {
-            width : 75px;
-            height: 66px;
-            margin-top: 0px;
-            margin-left: 4px;
-        }
-    .bot-img-five{
-        width : 20%;
-        height: 100%;
-        float: left;
-    }
-        .bot-img-five:hover{
-            border: 2px solid red;
-        }
-        .bot-img-five > img {
-            width : 55px;
-            height: 55px;
-            margin-top: 5px;
-            margin-left: 15px;
-        }
+    
 .detail-left-text{
-    margin-top:10px;
+    width : 100%;
 }
     .format{
+        padding-left: 20px;
         line-height: 1em;
         font-size: 12px;
     }
-    .button-them{
-        width : auto;
-        height: 30px;
-        padding: 2px;
-        margin-left: 10px;
-    }
+        .format span {
+            font-size: 13px;
+            font-weight: bold;
+        }
 
+ /* col-right */
 .detail-right{  
     width : 60%;
-    height: 1000px;
     float: left;
 }
     .title h4{
-        font-size: 18px;
+        font-size: 20px;
         line-height: 1.4em;
-        box-sizing: border-box;
-        text-shadow: none;
     }
     .start i{
         margin-top: 6px;
@@ -125,137 +70,73 @@
     }
     .span-XDG{
         margin-left: 15px;
+        padding: 5px;
         color: #666;
         font-weight: 500;
-        font-size: 10px;
-        cursor: pointer;
+        font-size: 12px;
         font-weight: bold;
-        border: 1px solid slategray;
+        background: #e9e9e9;
         padding: 2px;
     }
 
-.onl-price-all{
-    width: 100%;
-    height: 205px;
-    margin-top: 20px;
-}
-    .onl-price-top{
+    .onl-price{
         width : 100%;
-        height: 50%;
+        padding: 5px;
     }
-        .price-top-left{
-            width : 25%;
-            height: 100%;
-            float: left;
-            padding: 5px;
-            color: #666;
-            font-size: 13px;
+    .onl-price-detail{
+        padding:10px; 
+        background:url(./../../../assets/background-images/background-price-detail.jpg) no-repeat 0px 0px;
+        background-size:cover;
         }
-        .price-top-right{
-            width : 75%;
-            height: 100%;
+        .price-detail {
+            line-height: 1.5em;
+        }
+        .price-detail p{
+            font-size: 14px;
+        }
+        .name-price {
+            width: 180px;
             float: left;
         }
 
-    .onl-price-bot{
-        width : 100%;
-        height: 50%;
-        border-top: 1px solid rgb(221, 220, 220);
+    .discount {
+        float: left;
+        width: 40px;
+        height: 30px;
+        padding-left: 10px;
+        padding-top: 5px;
+        background: #f98d00;
+        color: #fff;
+        border-radius: 2px;
+        font-size: 12px;
+        margin-right: 70px;
     }
-        .price-bot-left{
-            width : 25%;
-            height: 100%;
-            float: left;
-            padding: 5px;
-            margin-top: 5px;
-            color: #666;
-            font-size: 13px;
-        }
-            .on-spann{
-                color: #d10a00;
-                font-weight: bold;
-            }
-            .on-span{
-                font-size: 13px;
-                color: #666;
-            }
-        .price-bot-right{
-            width : 75%;
-            height: 100%;
-            float: left;
-            padding: 5px;
-            margin-top: 5px;
-            color: #666;
-            font-size: 12px;
-        }
-            .discount-tag{
-                background: #f98d00;
-                color: #fff;
-                padding: 1px 6px;
-                border-radius: 2px;
-                font-size: 12px;
-                position: relative;
-            }
-            .tag-text-one{
-                margin-left: 30px;
-            }
-            .tag-text-two{
-                margin-left: 30px;
-            }
-            .tag-text-three{
-                margin-left: 65px;
-            }
+    .image-thumb > img{
+        width: 28px;
+        padding-right: 10px;
+    }
+   
 
 .transport{
     width : auto;
     height: 80px;
-    border-top: 1px solid rgb(221, 220, 220);
 }
-    .transport-left{
-        width: 25%;
-        height: auto;
-        float: left;
-    }
-        .transport-left p{
-            color: #666;
-            font-size: 13px;
-            padding: 25px 0px 0px 5px;
-        }
-    .transport-right{
-        width : 75%;
-        height: auto;
-        float: left;
-    }
-        .transport-right img{
-            width: 28px;
-            height: auto;
-            padding: 20px 0px 0px 5px;
-        }
-        .transport-right span{
-            position: absolute;
-            color: #666;
-            font-size: 12px;
-            margin-left: 10px;
-            padding: 25px 0px 0px 5px;
-        }
-
 .onl-add-button{
     width:100%;
     height: 80px;
-    border-top: 1px solid rgb(221, 220, 220);
 }
     .onl-add-button-left{
-        width:25%;
+        width:20%;
         height: 80px;
         float: left;
     }
         .onl-add-button-left p{
             color: #666;
             font-size: 13px;
-            padding: 25px 0px 0px 5px;
         }
+
     .onl-add-button-right{
-        width: 75%;
+        width: 80%;
         height: 80px;
         float: left;
     }
@@ -264,7 +145,7 @@
             width:auto;
             color: #666;
             font-size: 13px;
-            padding: 25px 0px 0px 5px;
+           
         }
         .button-minus{
             float: left;
@@ -275,7 +156,6 @@
         .button-mid{
             color: #666;
             font-size: 13px;
-            padding: 25px 0px 0px 5px;
         }
             .button-mid input{
                 float: left;
@@ -304,7 +184,7 @@
             width : 90%;
         }
     .button-two{
-        width : 55%;
+        width : 50%;
         height: 80px;
         float: left;
         padding-top: 17px;
@@ -317,7 +197,7 @@
             padding:9px 9px;
             text-align: center;
             font-weight: bold;
-            width : 60%;
+            width : 70%;
         }
         .button-two img{
             width: 20px;
@@ -325,7 +205,7 @@
             margin-right: 3px;
         }
     .button-three{
-        width : 20%;
+        width : 25%;
         height: 80px;
         float: left;
         padding-top: 17px;
@@ -344,6 +224,6 @@
         .button-three-border{
             border: 1px solid rgb(182, 181, 181);
             padding: 5px;
-        }
+        } 
 /*--------------------------*/
 

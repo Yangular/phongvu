@@ -1,0 +1,30 @@
+@font-face{
+	font-family: 'FontUVF.font';
+    src: url(../../../../../assets/fonts/UVF.ttf);
+}
+
+h2#nameForm {
+    color:rgb(19, 64, 212);
+    font-family: 'FontUVF.font';
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #f1f3f7;
+    font-size: 60px;
+}
+.form-add-category {
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+form label {
+    display: inline-block;
+    text-shadow: 2px 2px 8px rgb(19, 64, 212);
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 6px 0;
+    color:#f1f3f7;
+    vertical-align: top;
+  }
+  .form-control {
+      border-radius: 5px;
+  }
+

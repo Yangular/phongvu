@@ -3,13 +3,16 @@ import { Routes } from '@angular/router';
 //component
 import { AdminComponent } from './admin/admin.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
-import { ProductsAddComponent } from './admin/container-admin/products-add/products-add.component';
-import { ProductsEditComponent } from './admin/container-admin/products-edit/products-edit.component';
-import { ProductsListComponent } from './admin/container-admin/products-list/products-list.component';
+import { ProductsAddComponent } from './admin/container-admin/products/products-add/products-add.component';
+import { ProductsEditComponent } from './admin/container-admin/products/products-edit/products-edit.component';
+import { ProductsListComponent } from './admin/container-admin/products/products-list/products-list.component';
 import { HomeComponent } from './home/home.component';
-import { ProductsDeactiveComponent } from './admin/container-admin/products-deactive/products-deactive.component';
+import { ProductsDeactiveComponent } from './admin/container-admin/products/products-deactive/products-deactive.component';
 import { ProductDetailComponent } from './home/product-detail/product-detail.component';
 import { MainComponent } from './home/main/main.component';
+import { CategoryListComponent } from './admin/container-admin/category/category-list/category-list.component';
+import { CategoryDeactiveComponent } from './admin/container-admin/category/category-deactive/category-deactive.component';
+import { CategoryAddComponent } from './admin/container-admin/category/category-add/category-add.component';
 
 //CanActivate
 import { AuthGuard } from './Service/Guards/auth.guard';
@@ -30,7 +33,7 @@ export const appRoutes: Routes = [
         component: MainComponent,
       },
       {
-        path: 'detail',
+        path: 'detail/:id',
         component: ProductDetailComponent,
       }
     ]
@@ -61,32 +64,21 @@ export const appRoutes: Routes = [
       {
         path: 'edit/:id',
         component: ProductsEditComponent
+      },
+      {
+        path: 'category-list',
+        component: CategoryListComponent
+      },
+      {
+        path: 'category-deactive',
+        component: CategoryDeactiveComponent
+      },
+      {
+        path: 'category-add',
+        component: CategoryAddComponent
       }
+
     ]
   },
        
-     
-
- 
-  // {
-  //   path: 'products',
-  //   component: ProductListComponent,
-  //   canActivate: [AuthGuard]
-  // },
-  //   {
-  //     path: 'product/:id',
-  //     component: ProductsComponent,
-  //     canActivate: [AuthGuard],
-  //     children: [
-  //       {
-  //         path: '',
-  //         component: ProductsDetailComponent
-  //       },
-  //       {
-  //         path: 'edit',
-  //         component: ProductEditComponent
-  //       }
-  //     ]
-  //   }
-  
 ];

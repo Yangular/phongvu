@@ -26,19 +26,43 @@
     <ul class="sidebar-menu" data-widget="tree">
       <li class="treeview">
         <a>
-          <i class="fa fa-table"></i><span>Danh sách sản phẩm</span>
+          <i class="fa fa-table"></i><span>List Products</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a [routerLink]="['/admin/']"><i class="fas fa-angle-right"></i > Active </a></li>
-          <li><a [routerLink]="['deactive']"><i class="fas fa-angle-right"></i> Deactive</a></li>
+          <li><a [routerLink]="['/admin/']"><i class="fas fa-angle-right"></i > Active Products</a></li>
+          <li><a [routerLink]="['deactive']"><i class="fas fa-angle-right"></i> Deactive Products</a></li>
+          <li>
+            <a [routerLink]="['add']">
+              <i class="fa fa-edit"></i> <span>Add Products<span style="color:red">New!!!</span></span>
+            </a>
+          </li>
         </ul>
       </li>
+
       <li class="treeview">
-        <a [routerLink]="['add']">
-          <i class="fa fa-edit"></i> <span>Thêm Sản Phẩm <span style="color:red">Mới!!!</span></span>
+        <a>
+          <i class="fa fa-table"></i><span>List Category</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li><a [routerLink]="['category-list']"><i class="fas fa-angle-right"></i > Active Category </a></li>
+          <li><a [routerLink]="['category-deactive']"><i class="fas fa-angle-right"></i> Deactive Category</a></li>
+          <li>
+            <a [routerLink]="['category-add']">
+              <i class="fa fa-edit"></i> <span>Add Category <span style="color:red">New!!!</span></span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="treeview">
+        <a [routerLink]="['/home']">
+          <i class="fas fa-home"></i> <span> Back Home</span>
         </a>
       </li>
       <li class="treeview">

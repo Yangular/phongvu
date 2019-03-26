@@ -1,3 +1,6 @@
 .sidebar-menu > li > a{
     color:aqua;
 }
+.treeview-menu > li > a{
+    color: ghostwhite;
+}
